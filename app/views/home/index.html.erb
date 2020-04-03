@@ -1,2 +1,63 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+ <section class="page-section">
+    <div class="containera">
+      <div class="product-item">
+        <div class="product-item-title d-flex">
+          <div class="bg-faded p-5 d-flex ml-auto rounded">
+            <h2 class="section-heading mb-0">
+              <span class="section-heading-upper">clothes-shareアプリ説明</span>
+              <span class="section-heading-lower"></span>
+            </h2>
+          </div>
+        </div>
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-01.jpg" alt="">
+        <div class="product-item-description d-flex mr-auto">
+          <div class="bg-faded p-5 rounded">
+            <p class="mb-0">始め方</p>
+            <p></p>
+            <p>1.新規登録orログインをしましょう</p>
+            <p>2.服追加ボタンを押して服を保存しましょう</p>
+            <p>3.画像などを貼り付けて自由に自分の持っている服の投稿していきましょう！投稿完了後はマイページで自分で投稿した服の画像が見る事が出来ます。また投稿した画像の編集、削除はマイページからする事が出来ます！</p>
+            <p>※自分の投稿したものしか編集、削除は行えません。</p>
+            <p>より良く使うためのアドバイス！</p>
+            <p>まずは自分の持っている服を保存しまくって行きましょう！！服を買う時に何を買うべきかの参考になります！！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+<%= image_tag "about.jpg",class: "p9" %>
+<section class="section">
+  <article class="media">
+    <div class="media-content">
+      <div class="content has-text-centered">
+        <p>
+          <strong class="is-size-1" style="font-family: cursive;">clothes.share</strong>
+        </p>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-5">
+          <br>
+          <%= link_to "ログイン", new_user_session_path, class: "button is-warning is-fullwidth" %>
+          <br>
+          <%= link_to "新規登録", new_user_registration_path, class: "button is-warning is-fullwidth" %>
+          
+        </div>
+      </div>
+    </div>
+  </article>
+  <br>
+  <div class="columns is-centered">
+    <div class="column">
+      <figure>
+        <div class="main-image"></div>
+      </figure>
+    </div>
+  </div>
+</section>
