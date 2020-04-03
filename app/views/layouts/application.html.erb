@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ClothesApp</title>
+    <title>Cooklife</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,16 @@
   </head>
 
   <body>
+   <% if flash[:notice] %>
+    <div class="notification is-info">
+      <p class="notice"><%= notice %></p>
+    </div>
+   <% end %>
+   <% if flash[:alert] %>
+   <div class="notification is-danger">
+    <p class="alert"><%= alert %></p>
+    </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
