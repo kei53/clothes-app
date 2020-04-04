@@ -27,3 +27,21 @@
 .hero.is-success{
   background-color: red($color: #000000);
 }
+
+.navbar-item{
+  background-color: #ffdd57;
+
+}
+.navbar-menu{
+  display: flex;
+  background-color: #ffdd57;
+}
+.navbar is-warning{
+  background-color: #ffdd57;
+}
+.navbarExampleTransparentExample{
+  background-color: #ffdd57;
+}
+.navbar is-warning{
+  background-color:white;
+}
